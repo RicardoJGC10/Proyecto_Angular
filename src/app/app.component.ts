@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { LoginComponent } from './layout/publico/login/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { PrincipalComponent } from './layout/privado/principal/principal.component';
@@ -14,7 +14,7 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, FormsModule,PrincipalComponent,CommonModule,UsuariosComponent],
+  imports: [RouterOutlet, LoginComponent, FormsModule,PrincipalComponent,CommonModule,UsuariosComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AutentifacionService } from '../../../../shared/servicios/autentifacion.service';
+import { CommonModule } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule,CommonModule,RouterModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -42,5 +45,9 @@ export class LoginComponent implements OnInit {
   public get f():any{
     return this.myform.controls;
   }
+
+  myimage:string = "images/Logo.png";
+
+
 
 }
