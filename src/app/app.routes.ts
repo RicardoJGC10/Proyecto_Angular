@@ -1,18 +1,15 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './layout/publico/login/login/login.component';
-import { UsuariosComponent } from './components/usuarios/usuarios.component';
-
-
+import { DashboardComponent } from './layout/dashboard/dashboard/dashboard.component';
+import { EstadisticasComponent } from './layout/estadisticas/estadisticas/estadisticas.component';
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
-    
-    { path: 'login', component: LoginComponent},
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard] },
+  { path: 'estadisticas', component: EstadisticasComponent, canActivate:[AuthGuard] },
 
-    { path: 'usuarios', component: UsuariosComponent},
-
-
-    {path: '', redirectTo: 'login', pathMatch: 'full'},
-
+  // Otras rutas aquí
 ];
-
-

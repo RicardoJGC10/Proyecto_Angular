@@ -1,4 +1,4 @@
-<body>
+<form (ngSubmit)="onLogin()">
   <div class="wrapper">
     <div class="container main">
       <div class="row">
@@ -16,20 +16,25 @@
 
             <header class="custom-label">Iniciar Sesion</header>
 
-            <form [formGroup]="myform" (ngSubmit)="submitFormulario()">
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label custom-label">Usuario *</label>
-                <input formControlName="name" [class.is-invalid]="f.name.errors && f.name.touched" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu Usuario">
-                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                <input type="email" id="email" [(ngModel)]="loginObj.username" name="email"class="form-control" placeholder="Ingresa tu Usuario" required #emails="ngModel">
+                <label for="email" class="form-label custom-label">Usuario *</label>
+
+                <div class="alert alert-danger mt-2" [hidden]="emails.valid || emails.pristine">
                   Usuario Obligatorio
+
                 </div>
+                
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="custom-label">Contraseña *</label>
-                <input formControlName="username" [class.is-invalid]="f.username.errors && f.username.touched" type="password" class="form-control" id="exampleFormControlTextarea1" placeholder="Ingresa tu Contraseña">
-                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                <input  type="password" id="password" [(ngModel)]="loginObj.password" name="password" class="form-control" placeholder="Ingresa tu Contraseña" required #pass="ngModel">
+                <label for="password" class="custom-label">Contraseña *</label>
+
+                <div class="alert alert-danger mt-2" [hidden]="pass.valid || pass.pristine">
                   Contraseña Obligatoria
+
                 </div>
+                
               </div>
               <div class="input-field">
                 <button class="btn btn-primary">Aceptar</button>
@@ -37,10 +42,9 @@
               <div class="signin">
                 <span class="custom-label">Copyright FEMSA.com 2024. <a href="#"></a></span>
               </div>
-            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-</body>
+</form>

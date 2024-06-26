@@ -8,6 +8,19 @@
 .wrapper {
     background: #FDA608;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c02121; /* Color de fondo para toda la página */
 }
 
 .main {
