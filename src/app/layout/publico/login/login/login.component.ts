@@ -27,7 +27,7 @@ export class LoginComponent {
   }
 
   onLogin() {
-    this.http.post('http://165.227.119.16:9000/login/', this.loginObj).subscribe(
+    this.http.post('http://165.227.119.16:8000/login/', this.loginObj).subscribe(
       (res: any) => {
         console.log('Response from server:', res);
         if (res.access) {
@@ -35,6 +35,8 @@ export class LoginComponent {
           if (res.user) {
             console.log(res.user.first_name);
             this.userService.setFirstName(res.user.first_name);
+            this.userService.setLastName(res.user.last_name);
+
           } else {
             console.error('User is not present in the response');
           }

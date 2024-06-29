@@ -14,11 +14,18 @@ import { AuthService } from '../../../auth-service.service';
 export class HeaderComponent {
   firstName: string = '';
 
+  lastName: string = '';
+
+
   constructor(private userService: UserService, private router: Router,private authService: AuthService) {}
 
   ngOnInit(): void {
     this.firstName = this.userService.getFirstName();
+    this.lastName = this.userService.getLastName();
+
     console.log('FirstName in dashboard:', this.firstName);
+    console.log('LasttName in dashboard:', this.lastName);
+
   }
 
   logout(): void {

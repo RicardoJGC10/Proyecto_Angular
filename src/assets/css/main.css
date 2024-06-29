@@ -904,7 +904,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 40px;
     height: 40px;
     font-size: 18px;
-    background: url(../images/neptune.png) no-repeat;
+    background: url(../images/Logo.png) no-repeat;
     background-position: center left;
     background-size: 40px;
     display: block;
@@ -1681,7 +1681,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Colorful Header */
 
 .header-colorful .app-header .navbar {
-    background-color: #2269f4;
+    background-color: #FDA608;
 }
 
 .header-colorful .app-header .navbar .navbar-nav>li>a {
@@ -6868,4 +6868,6 @@ span.flatpickr-weekday {
         margin-bottom: 10px;
     }
 }
+
+
 
