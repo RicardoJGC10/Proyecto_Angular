@@ -25,6 +25,16 @@ export class LoginComponent {
   ) {
     this.loginObj = new Login();
   }
+  ngOnInit(): void {
+    this.checkLocalStorage();
+  }
+
+  checkLocalStorage(){
+    if(localStorage.getItem('token')){
+      this,this.router.navigate(['dashboard']);
+
+    }
+  }
 
   onLogin() {
     this.http.post('http://165.227.119.16:8000/login/', this.loginObj).subscribe(
