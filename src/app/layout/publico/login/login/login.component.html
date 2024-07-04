@@ -1,0 +1,50 @@
+<form (ngSubmit)="onLogin()">
+  <div class="wrapper">
+    <div class="container main">
+      <div class="row">
+        <div class="col-md-6 side-image">
+          <!-- Imagen de fondo -->
+          <img [src]="myimage" alt="" class="background-image">
+        </div>
+        <div class="col-md-6 right">
+          <div class="input-box">
+
+            <div class="card-body text-center">
+              <!-- Imagen SVG del candado -->
+              
+            </div>
+
+            <header class="custom-label">Iniciar Sesion</header>
+
+              <div class="mb-3">
+                <input type="email" id="email" [(ngModel)]="loginObj.username" name="email"class="form-control" placeholder="Ingresa tu Usuario" required #emails="ngModel">
+                <label for="email" class="form-label custom-label">Usuario *</label>
+
+                <div class="alert alert-danger mt-2" [hidden]="emails.valid || emails.pristine">
+                  Usuario Obligatorio
+
+                </div>
+                
+              </div>
+              <div class="mb-3">
+                <input  type="password" id="password" [(ngModel)]="loginObj.password" name="password" class="form-control" placeholder="Ingresa tu Contraseña" required #pass="ngModel">
+                <label for="password" class="custom-label">Contraseña *</label>
+
+                <div class="alert alert-danger mt-2" [hidden]="pass.valid || pass.pristine">
+                  Contraseña Obligatoria
+
+                </div>
+                
+              </div>
+              <div class="input-field">
+                <button class="btn btn-primary">Aceptar</button>
+              </div>
+              <div class="signin">
+                <span class="custom-label">Copyright FEMSA.com 2024. <a href="#"></a></span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
