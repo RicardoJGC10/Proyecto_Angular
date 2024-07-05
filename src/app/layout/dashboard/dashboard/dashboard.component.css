@@ -1,10 +1,17 @@
-
-/* Estilo para header y tarjetas */
-app-header {
-    margin-bottom: -200px;
-    padding-bottom: -200px;
+.same-size-card {
+    min-height: 200px; /* Ajusta esta altura según sea necesario */
 }
 
-.card {
-    margin-top: 20px;
-}
+/* styles.css */
+.btn-custom-red {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+  }
+  
+  .btn-custom-red:hover {
+    background-color: darkred;
+    border-color: darkred;
+  }
+  
+  
