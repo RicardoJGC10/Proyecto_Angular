@@ -1,6 +1,14 @@
+export interface ApiResponse<T>{
+    message?:string;
+    data: T;
+}
+
+
+
+
 export interface CategoriasInterface{
 
-    id_categorie:number;
+    id_categorie?:string;
     name:string;
     description:string;
 }
