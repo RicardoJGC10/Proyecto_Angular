@@ -8,6 +8,8 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { EstadisticasComponent } from './layout/estadisticas/estadisticas/estadisticas.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoriasComponent } from './layout/categorias/categorias/categorias.component';
+import { DashboardComponent } from './layout/dashboard/dashboard/dashboard.component';
 
 
 
@@ -16,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, FormsModule,EstadisticasComponent,CommonModule,UsuariosComponent,RouterModule,NgApexchartsModule,HttpClientModule],
+  imports: [RouterOutlet, LoginComponent, FormsModule,EstadisticasComponent,CommonModule,UsuariosComponent,RouterModule,NgApexchartsModule,HttpClientModule,CategoriasComponent,DashboardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
