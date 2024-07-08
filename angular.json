@@ -30,15 +30,15 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/css/custom.css",
               "src/assets/css/main.css",
               "src/assets/css/horizontal-menu.css",
               "src/assets/plugins/bootstrap/css/bootstrap.min.css",
               "src/assets/plugins/perfectscroll/perfect-scrollbar.css",
               "src/assets/plugins/pace/pace.css",
+              "src/assets/plugins/datatables/datatables.min.css",
               "src/assets/plugins/highlight/styles/github-gist.css",
-              "src/assets/css/plugin/bootstrap-select.min.css",
+              "src/assets/css/theme.css",
               "src/assets/css/plugin/subscribe-better.css",
               "src/assets/css/plugin/animate.css",
               "src/assets/css/plugin/owl.carousel.css"
