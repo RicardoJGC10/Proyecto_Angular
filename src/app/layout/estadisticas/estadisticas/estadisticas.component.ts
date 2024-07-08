@@ -17,6 +17,7 @@ import {
 } from "ng-apexcharts";
 import { SidebarComponent } from '../../sidebar/sidebar/sidebar.component';
 import { HeaderComponent } from '../../header/header/header.component';
+import { FooterComponent } from '../../footer/footer/footer.component';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -38,7 +39,7 @@ export type ChartOptions = {
 @Component({
   selector: 'app-estadisticas',
   standalone: true,
-  imports: [RouterOutlet,NgApexchartsModule,SidebarComponent,HeaderComponent],
+  imports: [RouterOutlet,NgApexchartsModule,SidebarComponent,HeaderComponent,FooterComponent],
   templateUrl: './estadisticas.component.html',
   styleUrl: './estadisticas.component.css'
 })
