@@ -15,6 +15,10 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
+  getAllCategorias(): Observable<ApiResponse<CategoriasInterface[]>> {
+    return this.http.get<ApiResponse<CategoriasInterface[]>>(`${this.API_URL}`);
+  }
+
   getCategorias():Observable<any>{
     return this.http.get<any>(this.API_URL).pipe(res=>res);
   }

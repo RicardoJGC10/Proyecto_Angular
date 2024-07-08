@@ -265,6 +265,26 @@
 .navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
+/* Asegúrate de que este archivo está siendo cargado */
+.navbar-custom {
+    background-color: #FDA608;
+}
+.navbar-custom .navbar-brand .text-white {
+    color: white !important;
+}
+.btn-custom {
+    background-color: #FDA608;
+}
+.bg-car1 {
+    background-color: #FDA608;
+}
+.bg-car2 {
+    background-color: #7A7A7A;
+}
+.bg-car3 {
+    background-color: #4A4A4A;
+}
+
 
 
 
