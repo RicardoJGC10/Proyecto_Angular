@@ -8,6 +8,7 @@ import { FooterComponent } from './layout/footer/footer/footer.component';
 import { HomeComponent } from './layout/inicio/home/home.component';
 import { CategoriasComponent } from './layout/categorias/categorias/categorias.component';
 import { EmpleadosComponent } from './layout/empleados/empleados/empleados.component';
+import { ProveedoresComponent } from './layout/proveedores/proveedores/proveedores.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,8 @@ export const routes: Routes = [
   { path: 'estadisticas', component: EstadisticasComponent, canActivate:[AuthGuard] },
   { path: 'categorias', component: CategoriasComponent, canActivate:[AuthGuard] },
   { path: 'empleados', component: EmpleadosComponent, canActivate:[AuthGuard] },
+  { path: 'proveedores', component: ProveedoresComponent, canActivate:[AuthGuard] },
+
 
 
 
