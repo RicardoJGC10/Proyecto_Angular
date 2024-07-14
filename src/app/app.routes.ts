@@ -7,6 +7,7 @@ import { AuthGuard } from './auth.guard';
 import { FooterComponent } from './layout/footer/footer/footer.component';
 import { HomeComponent } from './layout/inicio/home/home.component';
 import { CategoriasComponent } from './layout/categorias/categorias/categorias.component';
+import { EmpleadosComponent } from './layout/empleados/empleados/empleados.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +17,8 @@ export const routes: Routes = [
   { path: 'tarjetas', component: FooterComponent, canActivate:[AuthGuard] },
   { path: 'estadisticas', component: EstadisticasComponent, canActivate:[AuthGuard] },
   { path: 'categorias', component: CategoriasComponent, canActivate:[AuthGuard] },
+  { path: 'empleados', component: EmpleadosComponent, canActivate:[AuthGuard] },
+
 
 
 

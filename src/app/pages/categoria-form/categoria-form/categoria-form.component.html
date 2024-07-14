@@ -1,25 +1,25 @@
 <h5 class="mb-5 text-lg font-bold tracking-tight text-gray-900 dark:text-dark">Category Details</h5>
-<form [formGroup]="categoriaForm" class="w-full" (ngSubmit)="onSubmit()" novalidate>
-  <div class="mb-5">
+<form [formGroup]="categoriaForm" class="form-grid w-full" (ngSubmit)="onSubmit()" novalidate>
+  <div>
     <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Name</label>
     <input type="text" id="name" class="form-control" placeholder="Name" formControlName="name">
     <div *ngIf="categoriaForm.get('name')?.hasError('required') && categoriaForm.get('name')?.touched" class="form-error">
       Name is required
     </div>
   </div>
-  <div class="mb-5">
-    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Category</label>
+  <div>
+    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Description</label>
     <input type="text" id="description" class="form-control" placeholder="Description Category" formControlName="description">
     <div *ngIf="categoriaForm.get('description')?.hasError('required') && categoriaForm.get('description')?.touched" class="form-error">
       Description is required
     </div>
   </div>
-  <button type="submit"  style="background-color: #1E40AF; color: #FFFFFF; border-radius: 0.375rem; padding: 0.625rem 1.25rem; font-weight: 500;">
-    Submit
-  </button>
-  
- 
-  <button type="button"  class="submit-button" (click)="onClose()"style="background-color: #FF0000; color: #FFFFFF; border-radius: 0.375rem; padding: 0.625rem 1.25rem; font-weight: 500;">
-    Cancel
-  </button>
+  <div class="buttons">
+    <button type="submit" class="submit-button">
+      Submit
+    </button>
+    <button type="button" (click)="onClose()" class="cancel-button">
+      Cancel
+    </button>
+  </div>
 </form>
