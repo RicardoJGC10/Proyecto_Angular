@@ -13,7 +13,7 @@ interface ApiResponse<T> {
   providedIn: 'root'
 })
 export class EmpleadoService {
-  private API_URL = 'http://165.227.119.16:8000/employees/';
+  private API_URL = 'http://143.198.70.194/employees/';
 
   constructor(private http: HttpClient) { }
 
@@ -32,14 +32,14 @@ export class EmpleadoService {
   }
 
   deleteCategoria(id: string): Observable<ApiResponse<any>> {
-    return this.http.delete<ApiResponse<any>>(`${this.API_URL}/${id}`)
+    return this.http.delete<ApiResponse<any>>(`${this.API_URL}${id}`)
       .pipe(
         catchError(this.handleError)
       );
   }
 
   updateCategoria(id: string, empleado: EmpleadosInterface): Observable<ApiResponse<EmpleadosInterface>> {
-    return this.http.put<ApiResponse<EmpleadosInterface>>(`${this.API_URL}/${id}/`, empleado)
+    return this.http.put<ApiResponse<EmpleadosInterface>>(`${this.API_URL}${id}/`, empleado)
       .pipe(
         catchError(this.handleError)
       );

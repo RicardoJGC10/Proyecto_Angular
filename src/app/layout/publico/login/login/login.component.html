@@ -14,10 +14,10 @@
               
             </div>
 
-            <header class="custom-label">Iniciar Sesion</header>
+            <header class="custom-label">Iniciar Sesión</header>
 
               <div class="mb-3">
-                <input type="email" id="email" [(ngModel)]="loginObj.username" name="email"class="form-control" placeholder="Ingresa tu Usuario" required #emails="ngModel">
+                <input type="email" id="email" [(ngModel)]="loginObj.username" name="email" class="form-control" placeholder="Ingresa tu Usuario" required #emails="ngModel">
                 <label for="email" class="form-label custom-label">Usuario *</label>
 
                 <div class="alert alert-danger mt-2" [hidden]="emails.valid || emails.pristine">
@@ -27,7 +27,7 @@
                 
               </div>
               <div class="mb-3">
-                <input  type="password" id="password" [(ngModel)]="loginObj.password" name="password" class="form-control" placeholder="Ingresa tu Contraseña" required #pass="ngModel">
+                <input type="password" id="password" [(ngModel)]="loginObj.password" name="password" class="form-control" placeholder="Ingresa tu Contraseña" required #pass="ngModel">
                 <label for="password" class="custom-label">Contraseña *</label>
 
                 <div class="alert alert-danger mt-2" [hidden]="pass.valid || pass.pristine">

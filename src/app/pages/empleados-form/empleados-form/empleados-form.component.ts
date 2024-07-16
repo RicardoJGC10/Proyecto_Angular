@@ -30,7 +30,7 @@ export class EmpleadosFormComponent implements OnChanges {
       name: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required]),
       phone: new FormControl('', [Validators.required]),
-      departament: new FormControl('', [Validators.required]),
+      department: new FormControl('', [Validators.required]),
 
 
     });
@@ -43,7 +43,7 @@ export class EmpleadosFormComponent implements OnChanges {
         name: this.data.name,
         email: this.data.email,
         phone: this.data.phone,
-        departament: this.data.department,
+        department: this.data.department,
 
 
       });

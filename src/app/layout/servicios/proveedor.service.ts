@@ -12,7 +12,7 @@ interface ApiResponse<T> {
   providedIn: 'root'
 })
 export class ProveedorService {
-  private API_URL = 'http://165.227.119.16:8000/api/proveedores/';
+  private API_URL = 'http://143.198.70.194/api/proveedores/';
 
 
   constructor(private http: HttpClient) { }

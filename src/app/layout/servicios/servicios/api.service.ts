@@ -10,7 +10,7 @@ import { ApiResponse, CategoriasInterface } from '../../../modelos/categorias.in
 })
 export class ApiService {
 
-  private API_URL = 'http://165.227.119.16:8000/api/categorias';
+  private API_URL = 'http://143.198.70.194/api/categorias';
 
 
   constructor(private http:HttpClient) { }

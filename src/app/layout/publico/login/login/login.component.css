@@ -227,3 +227,12 @@ span a:hover {
     }
     
 }
+.form-control {
+  background-color: white; /* Cambia el color de fondo a blanco */
+  color: black; /* Cambia el color del texto, si es necesario */
+}
+
+.form-control::placeholder {
+  color: #999; /* Cambia el color del texto del placeholder, si es necesario */
+}
+
