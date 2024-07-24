@@ -69,6 +69,9 @@ export class LoginComponent {
   }
 
   myimage: string = "images/Logo.png";
+  myimage2: string = "images/bloqueo.png";
+  myimage3: string = "images/wave.png";
+
 }
 
 export class Login {
