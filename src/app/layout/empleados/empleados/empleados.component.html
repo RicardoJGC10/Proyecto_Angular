@@ -68,7 +68,6 @@
                                             <table class="table">
                                                 <thead>
                                                     <tr>
-                                                        <th>#</th>
                                                         <th>Name</th>
                                                         <th>Email</th>
                                                         <th>Phone</th>
@@ -78,7 +77,6 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr *ngFor="let item of filteredCategories | paginate: { itemsPerPage: 10, currentPage: currentPage }; trackBy: trackById">
-                                                        <td scope="row">{{item.employee_id}}</td>
                                                         <td>{{item.name}}</td>
                                                         <td>{{item.email}}</td>
                                                         <td>{{item.phone}}</td>

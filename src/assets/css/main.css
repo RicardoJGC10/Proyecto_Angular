@@ -1024,7 +1024,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app-menu>ul>li>a {
     text-decoration: none;
-    color: #40475c;
+    color: #FFFFFF;
     font-size: 14px;
     margin: 3px 15px;
     padding: 10px 15px;
@@ -1038,7 +1038,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app-menu>ul>li>a:hover, .app-menu>ul>li.open>a, .app-menu>ul>li.active-page>a {
-    color: #2269F5;
+    color: #FDA608;
 }
 
 .app-menu>ul>li>a:hover {
