@@ -51,14 +51,14 @@ export class CategoriaFormComponent implements OnChanges {
         this.categoriaService.updateCategoria(this.data.id_categorie as string, categoriaData)
           .subscribe({
             next: (response) => {
-              this.toastrService.success('Category updated successfully');
+              this.toastrService.success('Categoría actualizada exitosamente');
 
               this.categoriaForm.reset(); // Reiniciar el formulario después de crear
               this.onClose();
             },
             error: (err) => {
               console.error('Error updating category:', err);
-              this.toastrService.error('Error updating category');
+              this.toastrService.error('Error al actualizar la categoría');
             }
           });
       } else {
@@ -66,18 +66,18 @@ export class CategoriaFormComponent implements OnChanges {
   
         this.categoriaService.createCategoria(categoriaData).subscribe({
           next: (response) => {
-            this.toastrService.success('Category created successfully');
+            this.toastrService.success('Categoría creada exitosamente');
             this.categoriaForm.reset(); // Reiniciar el formulario después de crear
             this.onClose();
           },
           error: (err) => {
             console.error('Error creating category:', err);
-            this.toastrService.error('Error creating category');
+            this.toastrService.error('Error al crear categoría');
           }
         });
       }
     } else {
-      this.toastrService.warning('Please fill out all fields correctly');
+      this.toastrService.warning('Por favor complete todos los campos correctamente');
       this.categoriaForm.markAllAsTouched();
     }
   }

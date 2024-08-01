@@ -6,14 +6,14 @@
     <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Nombre</label>
     <input type="text" id="name" class="form-control" placeholder="Nombre" formControlName="name">
     <div *ngIf="categoriaForm.get('name')?.hasError('required') && categoriaForm.get('name')?.touched" class="form-error">
-      Se requiere el nombre
+      Nombre es requerido
     </div>
   </div>
   <div>
     <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Descripción</label>
     <input type="text" id="description" class="form-control" placeholder="Descripción" formControlName="description">
     <div *ngIf="categoriaForm.get('description')?.hasError('required') && categoriaForm.get('description')?.touched" class="form-error">
-      Se requiere descripción
+      Descripción es requerida
     </div>
   </div>
   <div class="buttons">

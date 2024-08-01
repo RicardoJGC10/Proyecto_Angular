@@ -110,13 +110,13 @@ export class ProveedorFormComponent implements OnChanges {
               this.registros[index] = updatedProveedor;
               this.ordenarRegistros(); // Ordenar por id después de actualizar
             }
-            this.toastrService.success('Category updated successfully');
+            this.toastrService.success('Categoría actualizada exitosamente');
             this.proveedorForm.reset();
             this.onClose();
           },
           error: (err) => {
             console.error('Error updating category:', err);
-            this.toastrService.error('Error updating category');
+            this.toastrService.error('Error al actualizar la categoría');
           },
         });
     } else {
@@ -127,18 +127,18 @@ export class ProveedorFormComponent implements OnChanges {
           const newproveedor = response.data;
           this.registros.push(newproveedor);
           this.ordenarRegistros(); // Ordenar por id después de crear
-          this.toastrService.success('Category created successfully');
+          this.toastrService.success('Categoría creada exitosamente');
           this.proveedorForm.reset();
           this.onClose();
         },
         error: (err) => {
           console.error('Error creating category:', err);
-          this.toastrService.error('Error creating category');
+          this.toastrService.error('Error al crear categoría');
         },
       });
     }
   } else {
-    this.toastrService.warning('Please fill out all fields correctly');
+    this.toastrService.warning('Por favor complete todos los campos correctamente');
     this.proveedorForm.markAllAsTouched();
   }
 }

@@ -78,7 +78,7 @@ export class ProveedoresComponent implements OnInit {
         if (result && result.message) {
           this.toastService.success(result.message);
         } else {
-          this.toastService.warning('Removed successfully');
+          this.toastService.warning('Eliminado con éxito');
         }
         this.getCategorias();
       },
