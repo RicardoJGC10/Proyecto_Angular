@@ -61,27 +61,25 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="header-actions">
-                                            <input type="text" placeholder="Search..." [(ngModel)]="searchQuery" (input)="filterCategories()" />
-                                            <button type="button" (click)="openModel()" class="add_new">+ Add New</button>
+                                            <input type="text" placeholder="Buscar..." [(ngModel)]="searchQuery" (input)="filterCategories()" />
+                                            <button type="button" (click)="openModel()" class="add_new">Registrar</button>
                                         </div>
                                         <div class="table-responsive">
                                             <table class="table">
                                                 <thead>
                                                     <tr>
-                                                        <th>#</th>
-                                                        <th>Name</th>
-                                                        <th>Description</th>
-                                                        <th>Action</th>
+                                                        <th>Nombre</th>
+                                                        <th>Descripción</th>
+                                                        <th>Acciones</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr *ngFor="let item of filteredCategories | paginate: { itemsPerPage: 10, currentPage: currentPage }; trackBy: trackById">
-                                                        <td scope="row">{{item.id_categorie}}</td>
                                                         <td>{{item.name}}</td>
                                                         <td>{{item.description}}</td>
                                                         <td>
-                                                            <button class="btn btn-edit" (click)="onEdit(item)">Edit</button>
-                                                            <button class="btn btn-delete" (click)="onDelete(item.id_categorie!)">Delete</button>
+                                                            <button class="btn btn-edit" (click)="onEdit(item)">Editar</button>
+                                                            <button class="btn btn-delete" (click)="onDelete(item.id_categorie!)">Eliminar</button>
                                                         </td>
                                                     </tr>
                                                 </tbody>
