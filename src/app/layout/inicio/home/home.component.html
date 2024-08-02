@@ -186,34 +186,28 @@
     </section>
 
     <section id="seccion1" class="naturix-goods sec-space light-bg">
-    <div class="container">  
-        <section class="gallery-section">
+        <div class="container">  
+          <section class="gallery-section">
             <div class="title-wrap">
-                <h2 class="section-title">
-                    <span class="light-font">LO</span>
-                    <strong> MAS VENDIDO<img src="" alt="" /></strong>
-                </h2>
+              <h2 class="section-title">
+                <span class="light-font">LO</span>
+                <strong> MAS VENDIDO<img src="" alt="" /></strong>
+              </h2>
             </div>
             
             <div class="gallery">
-                <div class="gallery-item">
-                    <img src="assets/ferre/WhatsApp Image 2024-06-20 at 9.35.10 PM (2).jpeg" alt="Imagen 1">
+              <div class="gallery-item" *ngFor="let producto of productos">
+                <img [src]="producto.image" [alt]="producto.name" />
+                <div class="gallery-info">
+                  <h3 class="product-name">{{ producto.name }}</h3>
+                  <p class="product-price">{{ producto.price | currency }}</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="assets/ferre/producto4.jpg" alt="Imagen 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/ferre/producto3.png" alt="Imagen 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/ferre/WhatsApp Image 2024-06-20 at 9.35.10 PM (3).jpeg" alt="Imagen 4">
-                </div>
+              </div>
             </div>
-        </section>
-    </div>
-</section>
-
-
+          </section>
+        </div>
+    </section>
+      
    
 <section class="banner">
     <div class="container">
