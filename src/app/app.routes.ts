@@ -10,6 +10,7 @@ import { CategoriasComponent } from './layout/categorias/categorias/categorias.c
 import { EmpleadosComponent } from './layout/empleados/empleados/empleados.component';
 import { ProveedoresComponent } from './layout/proveedores/proveedores/proveedores.component';
 import { ProductosComponent } from './layout/productos/productos/productos.component';
+import { VentasComponent } from './layout/ventas/ventas/ventas.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +23,8 @@ export const routes: Routes = [
   { path: 'empleados', component: EmpleadosComponent, canActivate:[AuthGuard] },
   { path: 'proveedores', component: ProveedoresComponent, canActivate:[AuthGuard] },
   { path: 'productos', component: ProductosComponent, canActivate:[AuthGuard] },
+  { path: 'ventas', component: VentasComponent, canActivate:[AuthGuard] },
+
 
 
 
