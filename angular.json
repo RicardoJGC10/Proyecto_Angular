@@ -24,14 +24,6 @@
               {
                 "glob": "**/*",
                 "input": "public"
-
-              }
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-=======
               },
                "src/favicon.ico",
                "src/assets"
@@ -49,7 +41,9 @@
               "src/assets/css/theme.css",
               "src/assets/css/plugin/subscribe-better.css",
               "src/assets/css/plugin/animate.css",
-              "src/assets/css/plugin/owl.carousel.css"
+              "src/assets/css/plugin/owl.carousel.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+
               
             ],
             "scripts": [
@@ -61,10 +55,20 @@
               "src/assets/js/main.min.js",
               "src/assets/js/custom.js",
               "src/assets/js/pages/dashboard.js",
-              "node_modules/apexcharts/dist/apexcharts.min.js"
-              
+              "src/assets/js/pages/datatables.js",
+              "src/assets/plugins/datatables/datatables.min.js",
+              "src/assets/plugins/highlight/highlight.pack.js",
+              "src/assets/plugins/bootstrap/js/popper.min.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js",
+              "src/assets/js/theme.js",
+              "src/assets/js/plugin/jquery.subscribe-better.min.js",
+              "src/assets/js/plugin/jquery.countdown.js",
+              "src/assets/js/plugin/jquery.plugin.min.js",
+              "src/assets/js/plugin/owl.carousel.min.js",
+              "src/assets/js/plugin/bootstrap-select.min.js",
+              "src/assets/js/plugin/bootstrap.min.js",
+              "src/assets/js/plugin/jquery-2.2.4.min.js"
             ]
-
           },
           "configurations": {
             "production": {
