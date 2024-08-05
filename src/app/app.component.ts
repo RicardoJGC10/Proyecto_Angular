@@ -10,12 +10,13 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriasComponent } from './layout/categorias/categorias/categorias.component';
 import { DashboardComponent } from './layout/dashboard/dashboard/dashboard.component';
+import { SidebarComponent } from './layout/sidebar/sidebar/sidebar.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, FormsModule,EstadisticasComponent,CommonModule,UsuariosComponent,RouterModule,NgApexchartsModule,HttpClientModule,CategoriasComponent,DashboardComponent],
+  imports: [RouterOutlet, LoginComponent, FormsModule,EstadisticasComponent,CommonModule,UsuariosComponent,RouterModule,NgApexchartsModule,HttpClientModule,CategoriasComponent,DashboardComponent,SidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
