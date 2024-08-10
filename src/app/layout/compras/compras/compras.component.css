@@ -25,7 +25,13 @@ app-header {
     height: 100%;
     background: rgba(0,0,0,0.5);
     z-index: 1050;
+    overflow-y: auto; /* Permite el scroll en el modal completo si es necesario */
+
   }
+  .modal-dialog {
+    max-width: 600px; /* Ajusta el ancho del modal según sea necesario */
+    margin: 1.75rem auto;
+}
   
   
   
@@ -34,7 +40,17 @@ app-header {
     border-radius: 0.3rem;
     border: 1px solid #dee2e6;
     box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    max-height: 80vh; /* Limita la altura máxima del contenido del modal */
+    overflow: hidden; /* Evita el desbordamiento */
+
+
   }
+
+.modal-body {
+  max-height: 60vh; /* Limita la altura del cuerpo del modal */
+  overflow-y: auto; /* Permite el scroll vertical si el contenido excede la altura */
+  padding: 15px; /* Espaciado interno para el contenido */
+}
 
   .btn-secondary {
     background-color: #FDA608;
